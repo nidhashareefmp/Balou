@@ -1,0 +1,71 @@
+/* =========================
+   SHOP LAYOUT
+========================= */
+
+.shop-layout {
+  display: flex;
+  gap: 28px;
+  padding: 24px;
+  background: #fafafa;
+}
+
+/* =========================
+   FILTER SIDEBAR
+========================= */
+
+.filter-sidebar {
+  width: 220px;               /* 👈 small & neat */
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 14px;
+  height: fit-content;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.filter-sidebar h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.filter-sidebar label {
+  font-size: 13px;
+  color: #444;
+}
+
+.filter-sidebar input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* =========================
+   PRODUCT SECTION
+========================= */
+
+.product-section {
+  flex: 1;
+}
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+/* =========================
+   MOBILE VIEW
+========================= */
+
+@media (max-width: 768px) {
+  .shop-layout {
+    flex-direction: column;
+  }
+
+  .filter-sidebar {
+    width: 100%;
+  }
+}
