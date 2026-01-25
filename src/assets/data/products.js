@@ -20,21 +20,25 @@ const products = [
     title: "Floral Kids Dress",
     price: 899,
     image: dress1,
-    category: "Kids Wear"
+    category: "Kids Wear",
+    isLatest: true,
   },
   {
     id: 2,
     title: "Cotton Party Frock",
     price: 1099,
     image: dress2,
-    category: "Kids Wear"
+    category: "Kids Wear",
+    isLatest: true,
+
   },
   {
     id: 3,
     title: "Casual Summer Outfit",
     price: 749,
     image: dress3,
-    category: "Kids Wear"
+    category: "Kids Wear",
+    isLatest: true,
   },
   {
     id: 4,
@@ -50,70 +54,84 @@ const products = [
     title: "Printed Cotton Dress",
     price: 999,
     image: dress5,
-    category: "Kids Wear"
+    category: "Kids Wear",
+    isLatest: true,
   },
   {
     id: 6,
     title: "Sleeveless Summer Frock",
     price: 699,
     image: dress6,
-    category: "Kids Wear"
+    category: "Kids Wear",
+    isLatest: true,
+    isTrending: true
   },
   {
     id: 7,
     title: "Festive Wear Outfit",
     price: 1499,
     image: dress7,
-    category: "Kids Wear"
+    category: "Kids Wear",
+    isLatest: true,
   },
   {
     id: 8,
     title: "Daily Wear Cotton Dress",
     price: 799,
     image: dress8,
-    category: "Kids Wear"
+    category: "Kids Wear",
+    isTrending: true
   },
-   {
-    id: 8,
+  {
+    id: 9,
     title: "Daily Wear Cotton Dress",
     price: 799,
     image: dress9,
-    category: "Kids Wear"
-  } ,
+    category: "Kids Wear",
+    isLatest: true,
+  },
   {
-    id: 8,
+    id: 10,
     title: "Daily Wear Cotton Dress",
     price: 799,
     image: dress10,
-    category: "Kids Wear"
+    category: "Kids Wear",
+    isLatest: true,
+    isTrending: true
   },
-   {
-    id: 8,
+  {
+    id: 11,
     title: "Daily Wear Cotton Dress",
     price: 799,
     image: dress11,
-    category: "Kids Wear"
+    category: "Kids Wear",
+    isLatest: true,
+    isTrending: true
   },
-   {
-    id: 8,
+  {
+    id: 12,
     title: "Daily Wear Cotton Dress",
     price: 799,
     image: dress12,
-    category: "Kids Wear"
+    category: "Kids Wear",
+    isTrending: true
   },
-   {
-    id: 8,
+  {
+    id: 13,
     title: "Daily Wear Cotton Dress",
     price: 799,
     image: dress13,
-    category: "Kids Wear"
+    category: "Kids Wear",
+    isLatest: true,
+    isTrending: true
   },
-   {
-    id: 8,
+  {
+    id: 14,
     title: "Daily Wear Cotton Dress",
     price: 799,
     image: dress14,
-    category: "Kids Wear"
+    category: "Kids Wear",
+    isLatest: true,
   }
 ];
 
