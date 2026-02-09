@@ -18,6 +18,13 @@ import age2 from "../assets/3-6.jpg";
 import age3 from "../assets/6-12.jpg";
 import age4 from "../assets/1year.jpg";
 
+// REVIEWS
+import mother1 from "../assets/reviews/mother1.jpg";
+import mother2 from "../assets/reviews/mother2.jpg";
+import influencer from "../assets/reviews/influencer.jpg";
+import actress from "../assets/reviews/actress.jpg";
+
+
 export default function Hero() {
   const [showCoupons, setShowCoupons] = useState(false);
 
@@ -62,23 +69,23 @@ export default function Hero() {
       </section>
 
       {/* PROMO BANNER */}
-     <section className="promo-banner">
-  <Container fluid className="p-0 position-relative">
-    <img
-      src={promoImage}
-      alt="Promo Banner"
-      className="promo-img"
-    />
+      <section className="promo-banner">
+        <Container fluid className="p-0 position-relative">
+          <img
+            src={promoImage}
+            alt="Promo Banner"
+            className="promo-img"
+          />
 
-    <div className="promo-overlay">
-      <h2>New Arrivals Are Here 🍼</h2>
-      <p>Comfortable & Trendy Baby Wear</p>
-      <Link to="/shop">
-        <Button className="promo-btn">Shop Collection</Button>
-      </Link>
-    </div>
-  </Container>
-</section>
+          <div className="promo-overlay">
+            <h2>New Arrivals Are Here 🍼</h2>
+            <p>Comfortable & Trendy Baby Wear</p>
+            <Link to="/shop">
+              <Button className="promo-btn">Shop Collection</Button>
+            </Link>
+          </div>
+        </Container>
+      </section>
 
 
       {/* LATEST RELEASED */}
@@ -106,26 +113,26 @@ export default function Hero() {
       </section>
 
       {/* TRENDING CAROUSEL */}
-     <section className="carousel-section">
-  <Container>
-    <h3 className="section-title">Trending Now 🔥</h3>
+      <section className="carousel-section">
+        <Container>
+          <h3 className="section-title">Trending Now 🔥</h3>
 
-    <div className="trending-scroll">
-      {products
-        .filter(item => item.isTrending)
-        .map(item => (
-          <Card className="trending-card" key={item.id}>
-            <Card.Img src={item.image} alt={item.title} />
-            <Card.Body className="text-center">
-              <Card.Title>{item.title}</Card.Title>
-              <p>₹{item.price}</p>
-              <Button size="sm">Shop Now</Button>
-            </Card.Body>
-          </Card>
-        ))}
-    </div>
-  </Container>
-</section>
+          <div className="trending-scroll">
+            {products
+              .filter(item => item.isTrending)
+              .map(item => (
+                <Card className="trending-card" key={item.id}>
+                  <Card.Img src={item.image} alt={item.title} />
+                  <Card.Body className="text-center">
+                    <Card.Title>{item.title}</Card.Title>
+                    <p>₹{item.price}</p>
+                    <Button size="sm">Shop Now</Button>
+                  </Card.Body>
+                </Card>
+              ))}
+          </div>
+        </Container>
+      </section>
 
 
       {/* AGE CATEGORY */}
@@ -133,9 +140,9 @@ export default function Hero() {
         <Container>
           <Row className="g-4">
             {[{ title: "0 – 3 Months", img: age1 },
-              { title: "3 – 6 Months", img: age2 },
-              { title: "6 – 12 Months", img: age3 },
-              { title: "1 – 2 Years", img: age4 }].map((item, index) => (
+            { title: "3 – 6 Months", img: age2 },
+            { title: "6 – 12 Months", img: age3 },
+            { title: "1 – 2 Years", img: age4 }].map((item, index) => (
               <Col md={3} sm={6} key={index}>
                 <Card className="age-card">
                   <Card.Img src={item.img} />
@@ -185,6 +192,39 @@ export default function Hero() {
           </Container>
         </section>
       )}
+
+      <section className="review-section">
+        <h2 className="review-heading">Baluo Trusted Voices</h2>
+
+        <div className="review-grid">
+          <div className="review-card">
+            <img src={mother1} alt="Approved by Mothers" />
+            <h4>Approved by Mothers</h4>
+            <p>Safe & gentle for kids</p>
+          </div>
+
+          <div className="review-card">
+            <img src={mother2} alt="Approved by Mothers" />
+            <h4>Approved by Mothers</h4>
+            <p>Safe & gentle for kids</p>
+          </div>
+
+          <div className="review-card">
+            <img src={influencer} alt="Influencer Pick" />
+            <h4>Influencer Pick</h4>
+            <p>Loved by parenting creators</p>
+          </div>
+
+          <div className="review-card">
+            <img src={actress} alt="Celebrity Approved" />
+            <h4>Celebrity Approved</h4>
+            <p>Styled by celebrities</p>
+          </div>
+        </div>
+      </section>
+
+
+
     </>
   );
 }

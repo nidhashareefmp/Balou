@@ -242,3 +242,55 @@
     min-width: 75%;      
   }
 }
+.review-section {
+  background: #ffffff;
+  padding: 80px 40px;
+  text-align: center;
+  border-radius: 32px 32px 0 0;
+}
+
+.review-heading {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.review-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 35px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.review-card {
+  background: #fafafa;
+  padding: 32px 24px;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.review-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #eee;
+  margin-bottom: 18px;
+}
+.review-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.review-card p {
+  font-size: 14px;
+  color: #666;
+}
+@media (max-width: 600px) {
+  .review-heading {
+    font-size: 28px;
+  }
+}
